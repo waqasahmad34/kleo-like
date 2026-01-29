@@ -72,7 +72,7 @@ function PricingCard({
   return (
     <article
       className={cn(
-        'relative flex flex-col rounded-2xl border p-6 transition-all',
+        'relative flex flex-col rounded-2xl border p-6 transition-all ',
         plan.highlighted
           ? 'border-accent bg-surface-elevated/80 shadow-lg shadow-accent/10'
           : 'border-surface-muted bg-surface-elevated/50',
@@ -177,7 +177,7 @@ export function Pricing() {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8"
+      className="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8 rounded-2xl border border-surface-muted bg-surface m-5"
       aria-labelledby="pricing-heading"
     >
       {/* Background gradient */}
