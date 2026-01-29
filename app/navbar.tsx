@@ -22,12 +22,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto">
         <div className="relative bg-white/5 rounded-2xl sm:rounded-full p-2 shadow-lg shadow-black/20 border border-white/5 backdrop-blur-sm">
           {/* Subtle glow effect */}
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#6670FF]/10 via-transparent to-[#6670FF]/10 opacity-50 pointer-events-none" />
+          <div className="absolute inset-0 rounded-2xl bg-linear-to-r from-[#6670FF]/10 via-transparent to-[#6670FF]/10 opacity-50 pointer-events-none" />
 
           <div className="relative flex items-center justify-between">
             {/* Left side: Logo and Brand */}
             <div className="flex items-center gap-4">
-              <Link href="/" className="flex-shrink-0 cursor-pointer">
+              <Link href="/" className="shrink-0 cursor-pointer">
                 <Image
                   src="/devgent.svg"
                   alt="Devgent Logo"
