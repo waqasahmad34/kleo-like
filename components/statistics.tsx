@@ -30,7 +30,7 @@ export function Statistics() {
   return (
     <section
       id="statistics"
-      className="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8"
+      className="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8 rounded-2xl border border-surface-muted bg-surface m-5"
       aria-labelledby="statistics-heading"
     >
       {/* Dark background */}

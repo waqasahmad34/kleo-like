@@ -2,6 +2,7 @@
 
 import { Pricing } from '@/components/pricing'
 import { Statistics } from '@/components/statistics'
+import { TrustedBy } from '@/components/trusted-by'
 
 // Dummy data for main content
 const mainContentData = {
@@ -19,6 +20,7 @@ export default function Home() {
         </section>
       </div>
 
+      <TrustedBy />
       <Statistics />
       <Pricing />
     </main>
