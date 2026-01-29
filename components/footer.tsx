@@ -11,6 +11,7 @@ import {
   Linkedin,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { sitename } from '@/lib/site'
 
 const PAGES_LINKS = [
   { label: 'About', href: '/#about' },
@@ -70,8 +71,6 @@ function LinkColumn({
 }
 
 export function Footer() {
-  const siteName = 'Devgent'
-
   function handleNewsletterSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     // Hook up to your newsletter API or service
@@ -170,7 +169,7 @@ export function Footer() {
         {/* Bottom: Copyright */}
         <div className="mt-12 border-t border-surface-muted pt-8">
           <p className="text-center text-sm text-muted">
-            Copyright © 2026 {siteName}. All Rights Reserved
+            Copyright © 2026 {sitename}. All Rights Reserved
           </p>
         </div>
       </div>
