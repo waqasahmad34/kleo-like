@@ -18,8 +18,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-5 z-50 w-full px-4 sm:px-6 lg:px-8 py-4">
-      <div className="max-w-7xl mx-auto">
+    <nav className="fixed top-12 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8 pointer-events-none">
+      <div className="max-w-7xl mx-auto pointer-events-auto">
         <div className="relative bg-white/5 rounded-2xl sm:rounded-full p-2 shadow-lg shadow-black/20 border border-white/5 backdrop-blur-sm">
           {/* Subtle glow effect */}
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#6670FF]/10 via-transparent to-[#6670FF]/10 opacity-50 pointer-events-none" />
