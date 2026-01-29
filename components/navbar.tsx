@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -9,6 +9,16 @@ import Link from "next/link";
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { label: "Features", href: "#" },
@@ -18,9 +28,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-12 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8 pointer-events-none">
+    <nav className="fixed top-5 md:top-12 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8 pointer-events-none">
       <div className="max-w-7xl mx-auto pointer-events-auto">
-        <div className="relative bg-white/5 rounded-2xl sm:rounded-full p-2 shadow-lg shadow-black/20 border border-white/5 backdrop-blur-sm">
+        <div className={cn(
+          "relative rounded-lg lg:rounded-full p-2 shadow-lg shadow-black/20 border border-white/5 backdrop-blur-sm transition-colors duration-300",
+          // Mobile/Tablet: white/5 initially, black on scroll or menu open
+          // Desktop: white/5 initially, black on scroll
+          !isScrolled && !isMobileMenuOpen ? "bg-white/5 lg:bg-white/5" : "bg-black lg:bg-black"
+        )}>
           {/* Subtle glow effect */}
           <div className="absolute inset-0 rounded-2xl bg-linear-to-r from-[#6670FF]/10 via-transparent to-[#6670FF]/10 opacity-50 pointer-events-none" />
 
@@ -40,7 +55,7 @@ const Navbar = () => {
             </div>
 
             {/* Center: Navigation Links */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
@@ -138,7 +153,7 @@ const Navbar = () => {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden text-gray-300 hover:text-white transition-colors p-2"
+                className="lg:hidden text-gray-300 hover:text-white transition-colors p-2"
                 aria-label="Menu"
               >
                 <svg
@@ -174,7 +189,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden mt-4 pt-4 border-t border-white/10">
+            <div className="lg:hidden mt-4 pt-4 border-t border-white/10">
               <div className="flex flex-col gap-4">
                 {navLinks.map((link) => (
                   <a
