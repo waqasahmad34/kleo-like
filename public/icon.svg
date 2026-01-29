@@ -1,0 +1,25 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .background { fill: #a855f7; }
+      .foreground { fill: white; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: #9333ea; }
+      .foreground { fill: white; }
+    }
+  </style>
+  <rect class="background" width="180" height="180" rx="36" />
+  <g transform="translate(40, 40)">
+    <!-- Modern VW logo with speed elements -->
+    <path class="foreground" d="M25 15 L35 45 L45 15 L40 15 L35 35 L30 15 Z" fill-rule="evenodd" />
+    <path class="foreground" d="M50 15 L60 45 L70 15 L65 15 L60 35 L55 15 Z" fill-rule="evenodd" />
+    <!-- Pen/writing element -->
+    <path class="foreground" d="M15 50 L20 55 L25 50 L20 45 Z" opacity="0.9" />
+    <line class="foreground" x1="20" y1="45" x2="20" y2="55" stroke-width="2" opacity="0.9" />
+    <!-- Speed lines -->
+    <path class="foreground" d="M30 50 L35 48 L30 46 Z" opacity="0.6" />
+    <path class="foreground" d="M40 52 L45 50 L40 48 Z" opacity="0.4" />
+    <path class="foreground" d="M50 54 L55 52 L50 50 Z" opacity="0.3" />
+  </g>
+</svg>

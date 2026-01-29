@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://velocity-write.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

@@ -1,0 +1,7 @@
+{
+  "name": "Site Name",
+  "short_name": "Site Name",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
