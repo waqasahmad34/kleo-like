@@ -1,7 +1,7 @@
 'use client'
 
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
+
+
 
 // Dummy data for main content
 const mainContentData = {
@@ -11,9 +11,7 @@ const mainContentData = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background flex flex-col">
-      <Header />
-
+    <main className="min-h-screen bg-[#0a0b0f] flex flex-col">
       <div className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16">
         <section className="text-center space-y-4">
           <h1 className="text-4xl font-bold text-foreground">{mainContentData.title}</h1>
@@ -21,7 +19,7 @@ export default function Home() {
         </section>
       </div>
 
-      <Footer />
+    
     </main>
   )
 }

@@ -37,6 +37,23 @@
   --sidebar-accent-foreground: oklch(0.25 0.03 280);
   --sidebar-border: oklch(0.92 0.01 280);
   --sidebar-ring: oklch(0.55 0.22 300);
+  
+  /* Custom theme colors */
+  --theme-primary: #000;
+  --theme-secondary: #73cfa8;
+  --theme-tertiary: #fb9289;
+  --theme-quaternary: #fde179;
+  --theme-quinary: #73b1ff;
+  --theme-senary: #F4FDFF;
+  --theme-body: #fff;
+  --theme-border: #DBDBDB;
+  --theme-light: #f3f0f0;
+  --theme-dark: #000000;
+  
+  /* Custom text colors */
+  --text-default: #555555;
+  --text-dark: #222;
+  --text-light: #fffefe;
 }
 
 .dark {
@@ -72,6 +89,23 @@
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.25 0.02 280);
   --sidebar-ring: oklch(0.65 0.22 300);
+  
+  /* Custom theme colors (dark mode) */
+  --theme-primary: #000;
+  --theme-secondary: #73cfa8;
+  --theme-tertiary: #fb9289;
+  --theme-quaternary: #fde179;
+  --theme-quinary: #73b1ff;
+  --theme-senary: #F4FDFF;
+  --theme-body: #fff;
+  --theme-border: #DBDBDB;
+  --theme-light: #f3f0f0;
+  --theme-dark: #000000;
+  
+  /* Custom text colors (dark mode) */
+  --text-default: #555555;
+  --text-dark: #222;
+  --text-light: #fffefe;
 }
 
 @theme inline {
@@ -113,6 +147,23 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom theme color utilities */
+  --color-theme-primary: var(--theme-primary);
+  --color-theme-secondary: var(--theme-secondary);
+  --color-theme-tertiary: var(--theme-tertiary);
+  --color-theme-quaternary: var(--theme-quaternary);
+  --color-theme-quinary: var(--theme-quinary);
+  --color-theme-senary: var(--theme-senary);
+  --color-theme-body: var(--theme-body);
+  --color-theme-border: var(--theme-border);
+  --color-theme-light: var(--theme-light);
+  --color-theme-dark: var(--theme-dark);
+  
+  /* Custom text color utilities */
+  --color-text-default: var(--text-default);
+  --color-text-dark: var(--text-dark);
+  --color-text-light: var(--text-light);
 }
 
 @layer base {
