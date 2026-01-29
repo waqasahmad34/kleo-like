@@ -65,16 +65,14 @@ export function TrustedBy({ count = '3200+' }: TrustedByProps) {
   return (
     <section
       id="trusted-by"
-      className="px-4 py-12 sm:px-6 lg:px-8 rounded-2xl border border-surface-muted bg-surface m-5"
+      className="overflow-hidden m-2 sm:m-4 md:m-6 px-4 py-12 sm:px-6 lg:px-8 rounded-2xl border border-default bg-surface"
       aria-label="Trusted by brands"
     >
       <div className="">
-        <div className="flex flex-col items-center gap-8 max-w-7xl mx-auto p-6 sm:flex-row sm:justify-between sm:gap-12 lg:p-8">
+        <div className="flex flex-col items-center gap-8 max-w-7xl mx-auto sm:p-6 sm:flex-row sm:justify-between sm:gap-12 lg:p-8">
           {/* Left: Trust text */}
-          <p className="shrink-0 text-center text-lg font-medium text-text-light sm:text-left">
-            Trusted by {count}
-            <br />
-            brands worldwide
+          <p className="shrink-0 whitespace-nowrap text-center w-full sm:w-auto sm:text-lg text-xs font-medium text-text-light sm:text-left">
+            Trusted by {count} brands worldwide
           </p>
 
           {/* Right: Logo carousel */}

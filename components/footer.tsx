@@ -79,9 +79,9 @@ export function Footer() {
   return (
     <footer
       className={cn(
-        'relative mx-4 mb-4 rounded-2xl px-6 py-12 sm:px-8 lg:px-12',
+        'relative m-2 sm:m-4 md:m-6 rounded-2xl px-6 py-12 sm:px-8 lg:px-12',
         'bg-surface-muted backdrop-blur-sm',
-        'border border-surface-muted shadow-lg shadow-black/20',
+        'border border-default shadow-lg shadow-black/20',
       )}
       role="contentinfo"
     >
@@ -105,7 +105,7 @@ export function Footer() {
               <div
                 className={cn(
                   'flex gap-0 overflow-hidden rounded-2xl',
-                  'border-2 border-surface-muted bg-surface',
+                  'border border-surface-muted bg-surface',
                   'focus-within:border-accent focus-within:shadow-[0_0_18px_var(--theme-accent-glow)]',
                   'transition-all duration-200',
                 )}
