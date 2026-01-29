@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "../components/navbar";
 import { Footer } from "@/components/footer";
-
+import { sitename } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Site Name",
+  title: sitename,
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 };
 

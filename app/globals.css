@@ -9,22 +9,35 @@
   --theme-quaternary: #fde179;
   --theme-quinary: #73b1ff;
   --theme-senary: #F4FDFF;
+  --theme-hover: #3e31b5;
   --theme-body: #fff;
   --theme-border: #DBDBDB;
   --theme-light: #f3f0f0;
   --theme-dark: #000000;
-  
+
+  /* Accent colors */
+  --theme-accent: #6670FF;
+  --theme-accent-hover: #5560e8;
+  --theme-accent-muted: rgba(102, 112, 255, 0.25);
+  --theme-accent-glow: rgba(102, 112, 255, 0.35);
+
+  /* Surface / background */
+  --theme-surface: #0a0a0a;
+  --theme-surface-elevated: #171717;
+  --theme-surface-muted: rgba(255, 255, 255, 0.05);
+
   /* Text colors */
   --text-default: #555555;
   --text-dark: #222;
   --text-light: #fffefe;
+  --text-muted: #a3a3a3;
 
 }
 
 @theme inline {
   /* Font configuration */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  
+
   /* Theme color utilities for Tailwind */
   --color-primary: var(--theme-primary);
   --color-secondary: var(--theme-secondary);
@@ -32,14 +45,22 @@
   --color-quaternary: var(--theme-quaternary);
   --color-quinary: var(--theme-quinary);
   --color-senary: var(--theme-senary);
+  --color-hover: var(--theme-hover);
   --color-body: var(--theme-body);
   --color-border: var(--theme-border);
   --color-light: var(--theme-light);
   --color-dark: var(--theme-dark);
-  /* Text color utilities for Tailwind */
+  --color-accent: var(--theme-accent);
+  --color-accent-hover: var(--theme-accent-hover);
+  --color-accent-muted: var(--theme-accent-muted);
+  --color-accent-glow: var(--theme-accent-glow);
+  --color-surface: var(--theme-surface);
+  --color-surface-elevated: var(--theme-surface-elevated);
+  --color-surface-muted: var(--theme-surface-muted);
   --color-default: var(--text-default);
-  --color-dark: var(--text-dark);
-  --color-light: var(--text-light);
+  --color-muted: var(--text-muted);
+  --color-text-dark: var(--text-dark);
+  --color-text-light: var(--text-light);
 
 }
 
