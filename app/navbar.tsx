@@ -166,7 +166,7 @@ const Navbar = () => {
               </button>
               <span className="text-white/10 sm:block hidden">|</span>
               {/* Get This Template Button */}
-              <Button className="hidden sm:inline-flex bg-gradient-to-r cursor-pointer from-[#6670FF] to-[#8B5CF6] hover:from-[#5560E6] hover:to-[#7B4CE6] text-white font-medium px-4 sm:px-4 py-7 rounded-full shadow-lg shadow-[#6670FF]/30 transition-all text-sm sm:text-base">
+              <Button className="hidden sm:inline-flex bg-gradient-to-r cursor-pointer from-[#6670FF] to-[#8B5CF6] hover:from-[#5560E6] hover:to-[#7B4CE6] text-white font-medium px-4 sm:px-4 py-4 rounded-full shadow-lg shadow-[#6670FF]/30 transition-all text-sm sm:text-base">
                 Sign In
               </Button>
             </div>
