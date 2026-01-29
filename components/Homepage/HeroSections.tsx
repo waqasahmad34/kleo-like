@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroSections = () => {
   return (
-    <div className="relative min-h-screen bg-black text-white flex justify-center items-center m-2 sm:m-4 md:m-6 border-1 border-default rounded-2xl overflow-hidden">
+    <div className="relative min-h-screen text-white flex justify-center items-center m-2 sm:m-4 md:m-6 border-1 border-default rounded-2xl overflow-hidden">
       {/* Star-like background effect */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[length:50px_50px] opacity-50 z-0" />
 
@@ -16,48 +16,48 @@ const HeroSections = () => {
           fill
           className="object-cover object-bottom"
           priority
-          quality={100}
         />
       </div>
+
+      {/* Gradient overlay */}
+      <div className="absolute top-0 inset-x-0 bg-gradient-to-b from-[#6670FF]/20 to-transparent h-[300px] z-[3]" />
 
       {/* Flowing dots animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-[2]">
         <div className="absolute inset-0">
-          {/* Row 1 */}
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[8%] bottom-0 animate-flow-up" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[18%] bottom-0 animate-flow-up-delayed" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[28%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[38%] bottom-0 animate-flow-up" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[48%] bottom-0 animate-flow-up-delayed" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[58%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[68%] bottom-0 animate-flow-up" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[78%] bottom-0 animate-flow-up-delayed" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[88%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[98%] bottom-0 animate-flow-up" />
+          {/* Shuffled dots - mixed animation delays */}
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[8%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[18%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[28%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[38%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[48%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[58%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[68%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[78%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[88%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[98%] bottom-0 animate-flow-up-delayed-2" />
           
-          {/* Row 2 */}
-          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[3%] bottom-0 animate-flow-up-delayed" />
-          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[13%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[3%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[13%] bottom-0 animate-flow-up-delayed" />
           <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[23%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[33%] bottom-0 animate-flow-up" />
-          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[43%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[33%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[43%] bottom-0 animate-flow-up-delayed" />
           <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[53%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[63%] bottom-0 animate-flow-up" />
-          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[73%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[63%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[73%] bottom-0 animate-flow-up-delayed" />
           <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[83%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[93%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[93%] bottom-0 animate-flow-up" />
           
-          {/* Row 3 */}
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[5%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[15%] bottom-0 animate-flow-up" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[25%] bottom-0 animate-flow-up-delayed" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[35%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[45%] bottom-0 animate-flow-up" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[55%] bottom-0 animate-flow-up-delayed" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[65%] bottom-0 animate-flow-up-delayed-2" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[75%] bottom-0 animate-flow-up" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[85%] bottom-0 animate-flow-up-delayed" />
-          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[95%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[5%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[15%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[25%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[35%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[45%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[55%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[65%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[75%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[85%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[95%] bottom-0 animate-flow-up-delayed" />
         </div>
       </div>
 
