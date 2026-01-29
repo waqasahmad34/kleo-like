@@ -20,6 +20,47 @@ const HeroSections = () => {
         />
       </div>
 
+      {/* Flowing dots animation */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-[2]">
+        <div className="absolute inset-0">
+          {/* Row 1 */}
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[8%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[18%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[28%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[38%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[48%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[58%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[68%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[78%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[88%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/30 rounded-full left-[98%] bottom-0 animate-flow-up" />
+          
+          {/* Row 2 */}
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[3%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[13%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[23%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[33%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[43%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[53%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[63%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[73%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[83%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/20 rounded-full left-[93%] bottom-0 animate-flow-up" />
+          
+          {/* Row 3 */}
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[5%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[15%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[25%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[35%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[45%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[55%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[65%] bottom-0 animate-flow-up-delayed-2" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[75%] bottom-0 animate-flow-up" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[85%] bottom-0 animate-flow-up-delayed" />
+          <div className="absolute w-0.5 h-0.5 bg-white/15 rounded-full left-[95%] bottom-0 animate-flow-up-delayed-2" />
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto mt-10 relative z-10 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         <div className="flex flex-col lg:grid lg:grid-cols-7 gap-6 sm:gap-8 items-center">
           {/* Left Section - Hero Content */}
@@ -64,7 +105,7 @@ const HeroSections = () => {
             {/* Floating GitHub Icon */}
             <div className="border-1 relative border-default overflow-hidden rounded-2xl md:rounded-4xl">
               {/* Floating icons - hidden on mobile, visible on tablet+ */}
-              <div className="hidden md:block absolute bottom-5 left-0 rotate-15 animate-float -z-20">
+                <div className="hidden md:block absolute bottom-5 left-0 rotate-15 animate-slow-bounce -z-20">
                 <div className="p-3 sm:p-4 bg-[#3e31b5]/20 rounded-lg shadow-lg flex items-center justify-center">
                   <Image
                     src="/github.svg"
@@ -76,7 +117,7 @@ const HeroSections = () => {
                   />
                 </div>
               </div>
-              <div className="hidden md:block absolute top-0 left-[50%] rotate-15 animate-float -z-20">
+              <div className="hidden md:block absolute top-0 left-[50%] rotate-15 animate-slow-bounce  -z-20">
                 <div className="p-3 sm:p-4 bg-[#3e31b5]/20 rounded-lg shadow-lg flex items-center justify-center">
                   <Image
                     src="/tools.svg"

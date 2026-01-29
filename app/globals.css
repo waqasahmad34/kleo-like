@@ -66,13 +66,66 @@
 
 @keyframes float {
   0%, 100% {
-    transform: translateY(0px);
+    transform: translate(-10px, -10px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translate(10px, 10px);
   }
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes slowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-slow-bounce {
+  animation: slowBounce 8s ease-in-out infinite;
+}
+
+@keyframes flowUp {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-25vh) translateX(10px);
+  }
+  50% {
+    transform: translateY(-50vh) translateX(-8px);
+  }
+  75% {
+    transform: translateY(-75vh) translateX(12px);
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-5px);
+    opacity: 0;
+  }
+}
+
+.animate-flow-up {
+  animation: flowUp 10s linear infinite;
+}
+
+.animate-flow-up-delayed {
+  animation: flowUp 10s linear infinite;
+  animation-delay: -5s;
+}
+
+.animate-flow-up-delayed-2 {
+  animation: flowUp 10s linear infinite;
+  animation-delay: -10s;
 }
