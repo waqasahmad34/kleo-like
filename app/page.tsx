@@ -1,7 +1,6 @@
 'use client'
 
-
-
+import { Pricing } from '@/components/pricing'
 
 // Dummy data for main content
 const mainContentData = {
@@ -19,7 +18,7 @@ export default function Home() {
         </section>
       </div>
 
-    
+      <Pricing />
     </main>
   )
 }
